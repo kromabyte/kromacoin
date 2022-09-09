@@ -1,3 +1,15 @@
+html{
+  height:100%;
+}
+
+a {
+  color: #A9A9B3;
+}
+
+a:hover {
+  color: #A9A9B3;
+}
+
 .navbar-nav {
     padding-right: 25%;
     height: 50px;
@@ -11,9 +23,23 @@
     width: 300px;
     padding-top: 100px;
     padding-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .full-screen {
     height: 600px;
 }
 
+#footer {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  height: 170px;
+}
+
+.footer-link {
+  color: #656769;
+}
+
+.footer-link:hover {
+  color: black;
+}
