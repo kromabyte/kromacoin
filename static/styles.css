@@ -1,6 +1,18 @@
+/* GENERAL */
 html{
   height:100%;
 }
+
+body {
+  font-family: 'GFS Didot', serif;
+}
+
+/* SECTION SIZE */
+section {
+  height: 840px;
+}
+
+
 
 a {
   color: #A9A9B3;
@@ -9,8 +21,13 @@ a {
 a:hover {
   color: #A9A9B3;
 }
+/* NAVBAR */
 
+.navbar {
+  box-shadow: 0px 2px 4px 0 rgba(187, 187, 187, 0.5);
+}
 .navbar-nav {
+    padding-top: 10px;
     padding-right: 25%;
     height: 50px;
 }
@@ -19,27 +36,88 @@ a:hover {
     padding-left: 20%;
 }
 
+/* BODY */
+
+#hero {
+  padding-top: 88px;
+}
 .center-logo {
-    width: 300px;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    margin-bottom: 40px;
+    width: 500px;
+    padding-top: 60px;
+
 }
 
-.full-screen {
-    height: 600px;
+h2 {
+  font-size: 38px;
+  margin-bottom: 30px;
 }
 
+p {
+  font-size: 18px;
+  color: #535252;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+/* PRICING */
+.plans {
+  padding: 50px 80px;
+  border-radius: 2px;
+  min-width: 450px;
+}
+
+.plans-light {
+  background-color: #ffffff;
+  border: 2px solid #dda841;
+}
+
+.plans-gold {
+  background-color: #dda841;
+  color: #ffffff;
+}
+
+.gold-let {
+  color: #dda841;
+}
+
+.plans h2 {
+  font-size: 80px;
+  font-weight: 60px;
+}
+
+.plans span {
+  font-size: 30px;
+}
+
+.plans ul {
+  list-style-type: square;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 15px 26px;
+  min-width: 160px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.btn-gold {
+  color: #ffffff;
+  background-color: #dda841;
+}
+
+/* FOOTER */
 #footer {
+  color: #A9A9B3;
   padding-top: 20px;
   padding-bottom: 40px;
   height: 170px;
 }
 
 .footer-link {
-  color: #656769;
+  color: #A9A9B3;
 }
 
 .footer-link:hover {
-  color: black;
+  color: #d9d9e2;
 }

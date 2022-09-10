@@ -8,11 +8,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/styles.css">
 </head>
 
-    <nav class="navbar navbar-expand-lg bg-light" >
+    <nav class="navbar navbar-expand-lg bg-light" style="position:fixed; width: 100%;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="static/images/kromacoin_logo4.png" alt="Logo" width="auto" height="60" class="d-inline-block align-text-top">
@@ -29,7 +33,7 @@
                         <a class="nav-link" href="#">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link ">Disabled</a>
@@ -41,15 +45,63 @@
     </nav>
 
 <body>
-    <section class="full-screen" >
-        <div class="container-fluid text-center " style="background-image: url('static/images/fondo_signos.png'); min-height: 600px; background-size:cover ">
-            <img src="static/images/kromacoin_logo3.png" class="center-logo" alt="...">
-            
+    <!-- HERO SECTION-->
+    <section class="" id="hero">
+        <div class="container-fluid text-center " style="background: url('static/images/fondo_signos.png'); background-size:cover; min-height: 60px;">
+            <img src="static/images/logo-gold2.png" class="center-logo" alt="...">
+            <h2 style="color: #b9b9b9;">hello</h2>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION-->    
+    <section id="pricing" class="divider">
+        <div class="container" style="width: 1000px;">
+            <div class="text-center">
+                <h2>Pricing built for <b>every business</b></h2>
+                <p>aqui tengo que poner un texto para ver como se ve en la pagina real, tiene que tener al menos menos 2 lineas de parrafo. pero no se me ocurre nada para poder escribir, despues resolvere esto</p>
+            </div>
+    
+            <!-- LEFT BOX -->
+            <div class="row">    
+                <div class="col-md-6">
+                <div class="pricing-container">
+                    <div class="plans plans-light">
+                        <h4 class="gold-let" >Starter solution</h4>
+                        <h2 class="gold-let">$89 <span class="gold-letters">/ per</span></h2>
+                        <h4 class="gold-let">Per 1 million Data Points</h4>
+                        <ul class="topmargin-xs">
+                            <li class="gold-let">Integration with Google Analytics</li>
+                            <li class="gold-let">Online Payment</li>
+                            <li class="gold-let">Solution Architect</li>
+                            <li class="gold-let">Dedicated Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-gold full-widht topmargin-sm">Start Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT BOX --> 
+                <div class="col-md-6">
+                    <div class="pricing-container">
+                        <div class="plans plans-gold">
+                            <h4>Starter solution</h4>
+                            <h2>$89 <span>/ per </span></h2>
+                            <h4>Per 1 million Data Points</h4>
+                            <ul class="topmargin-xs">
+                                <li>Integration with Google Analytics</li>
+                                <li>Online Payment</li>
+                                <li>Solution Architect</li>
+                                <li>Dedicated Support</li>
+                            </ul>
+                            <a href="#" class="btn btn-light full-widht topmargin-sm gold-let">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
         <!-- FOOTER PAGE -->
-    <section id="footer" class="bg-light" >
+    <footer id="footer" class="bg-dark" >
 
         <div class="container-fluid text-center">
 
@@ -70,6 +122,6 @@
             
         </div>
             
-    </section>
+    </footer>
 </body>
 </html>
