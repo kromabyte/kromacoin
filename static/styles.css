@@ -23,6 +23,31 @@ a:hover {
 }
 /* NAVBAR */
 
+.title {
+  justify-content: center;
+  padding-top: 17px;
+}
+
+.hover {
+  --s: 0.05em;   /* the thickness of the line */
+  --c: #000000; /* the color */
+  
+  color: rgba(180, 179, 179, 0);
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,rgb(103, 103, 103) 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+.hover:hover {
+  --_p: 100%
+}
+
+
+
+
 .navbar {
   box-shadow: 0px 2px 4px 0 rgba(187, 187, 187, 0.5);
 }
@@ -36,16 +61,22 @@ a:hover {
     padding-left: 20%;
 }
 
+
+
 /* BODY */
 
 #hero {
   padding-top: 88px;
 }
+
 .center-logo {
     width: 500px;
     padding-top: 60px;
 
 }
+
+
+
 
 h2 {
   font-size: 38px;
