@@ -1,0 +1,80 @@
+---
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon";
+---
+
+
+<main class="bg-cover cover px-8 grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"
+  style="background-image: url(/images/fondo.jpg); height: 715px ">
+  <div class="py-6 md:order-1 hidden md:block">
+    <img class="coinHover" src="/images/logo-gold.png" alt="logo-gold" width="550px">
+  </div>
+  <div class="ml-10">
+    <h1
+      class="text-white text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Buy, trade and grow with Kromacoin.
+    </h1>
+    <p class="text-lg mt-4 text-slate-300 max-w-xl">
+      Invest in one of the most secure and confiable crypto currency<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
+      any website.
+    </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="#"
+        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+        target="_blank"
+        class="bg-amber-500 flex gap-1 items-center justify-center font-bold"
+        rel="noopener">
+        <Icon class="text-white w-5 h-5" name="bx:bxs-rocket" />
+        Begin Now
+      </Link>
+      <Link
+        size="lg"
+        style="outline"
+        rel="noopener"
+        href="https://github.com/kromabyte/kromacoin"
+        class="flex gap-1 items-center justify-center"
+        target="_blank">
+        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
+        GitHub Repo
+      </Link>
+    </div>
+  </div>
+  
+</main>
+<div class="-mt-28 relative flex overflow-x-hidden text-slate-300">
+  <div class="inline-flex py-12 animate-marquee whitespace-nowrap">
+
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/bitcoin_logo.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+  </div>
+
+  <div class="inline-flex absolute pl-5 top-0 py-12 animate-marquee2 whitespace-nowrap">
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/bitcoin_logo.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+    <span class=" mx-4"> <img src="/images/binance.png" alt="binance" width="200px"></span>
+  </div>
+</div>
+
+<style>
+  .coinHover {
+    transform:
+      perspective(900px)
+      rotateY(-2deg);
+    transition: transform 1s ease 0s;
+    border-radius: 4px;
+
+    &:hover {
+      transform: perspective(900px) rotateY(-6deg);
+    }
+  }
+</style>
