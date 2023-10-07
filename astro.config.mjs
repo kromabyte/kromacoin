@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://kromabyte.github.io/kromacoin  ",
-  base: '/kromacoin',
+  base: '/kromacoin/',
   integrations: [
     tailwind(),
     image({
